@@ -33,21 +33,3 @@ sudo add-apt-repository ppa:oguzhaninan/stacer
 
 # # Install apps
 sudo apt-get -y install stacer gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell
-
-# # Themes
-git clone https://github.com/EliverLara/Ant.git
-git clone https://github.com/EliverLara/Ant-Nebula.git
-git clone https://github.com/dracula/gtk.git
-git clone https://github.com/EliverLara/Ant-Bloody.git
-
-sudo mv ./Ant /usr/share/themes
-sudo mv ./Ant-Nebula /usr/share/themes
-sudo mv ./Ant-Bloody /usr/share/themes
-sudo mv ./gtk /usr/share/themes
-
-# Fonts
-sudo apt install -y fonts-roboto
-
-# # Wallpapers
-sudo cp -a ./Wallpapers/. /usr/share/backgrounds
-
