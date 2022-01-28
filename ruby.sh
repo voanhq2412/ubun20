@@ -11,6 +11,8 @@ echo "" >> ~/.bashrc
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
+reset
+source ~/.bashrc
 
 # # # # RUBY
 rbenv install 3.0.2
