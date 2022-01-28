@@ -1,4 +1,10 @@
 cd ~
+# install and activate virtualenv
+sudo apt -y install virtualenv
+virtualenv py38 --python=python3.8
+source py38/bin/activate
+
+########################################### Install all within virtualenv ############################################
 sudo apt install python3.8-distutils -y
 sudo apt-get install python3-pip -y
 pip3 install --upgrade setuptools
@@ -17,7 +23,3 @@ pip install jupyterlab_code_formatter
 pip install jupyterlab-drawio
 pip install --upgrade jupyterlab jupyterlab-git
 
-# install virtualenv
-sudo apt -y install virtualenv
-virtualenv py38 --python=python3.8
-mkdir .virtualenv
