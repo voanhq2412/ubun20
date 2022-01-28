@@ -37,5 +37,8 @@ sudo apt-get -y install stacer gnome-tweak-tool gnome-shell-extensions chrome-gn
 ## enable firewall
 sudo ufw enable
 
+## Gnome Shell: Disable freqeunt apps 
+gsettings set org.gnome.desktop.privacy remember-app-usage false
+
 # wget https://github.com/vercel/hyper/releases/download/v3.1.5/hyper_3.1.5_amd64.deb
 # sudo apt -y install ./hyper_3.1.5_amd64.deb
