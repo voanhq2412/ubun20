@@ -5,6 +5,7 @@ This Repo includes predefined settings and scripts for setting up Ubuntu 20.
 - Theme
 - App installation script
 - Programming env setup
+---
 
 **Installation Options**
 - Minimal Installation 
@@ -16,12 +17,14 @@ Partitioning:
 - Swap (swap, double size of RAM)
 - EFI (efi, 1 GB)
 - Home (ext, the remaining)
+---
 
 
 
 **Dual Boot Problem**
 
 https://www.howtogeek.com/114884/how-to-repair-grub2-when-ubuntu-wont-boot/
+---
 
 
 
@@ -30,14 +33,11 @@ https://www.howtogeek.com/114884/how-to-repair-grub2-when-ubuntu-wont-boot/
 1. ```
    sudo apt -y install git
    ```
-2. Login Github and setup SSH key
+2. Login Github, setup SSH key and clone this repo
    ```
    https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
    ```
 3. ```
-   git clone git@github.com:voanhq2412/eOS.git
-   ```
-4. ```
    bash setup.sh
    ```
 
@@ -45,41 +45,38 @@ https://www.howtogeek.com/114884/how-to-repair-grub2-when-ubuntu-wont-boot/
 
 **NVidia Driver Setup for Linux**
 
-1. Blacklist the Nouveau drivers (these are default drivers for Nvidia on Linux)
+1. Run:
+   ```
+   lspci -k | grep -EA3 'VGA|3D|Display' 
+   ```
+
+   ... to check whether drivers have been installed; the output should include something like *Kernel driver in use: i915* for your Intel GPU, and *Kernel driver in use: nvidia* for Nvidia GPU. If not, then complete the remaining steps.
+
+2. Blacklist the Nouveau drivers (these are default drivers for Nvidia on Linux)
 
 ```
 	sudo nano /etc/modprobe.d/blacklist.conf
 ```
 
-2. Insert:
+3. Insert:
+   ```
+   blacklist nouveau
+   blacklist lbm-nouveau
+   options nouveau modeset=0
+   alias nouveau off
+   alias lbm-nouveau off
+   ```
 
-> blacklist nouveau
->
-> blacklist lbm-nouveau
->
-> options nouveau modeset=0
->
-> alias nouveau off
->
-> alias lbm-nouveau off
-
-2. Install Intell Drivers (if you have intel Drivers)
+4. Install Intell Drivers (if you have intel Drivers)
 
    ```
    sudo apt-get install mesa-utils && sudo apt-get install intel-microcode
    ```
-3. Install NVidia Drivers from 'Software & Updates' then
+5. Install NVidia Drivers from 'Software & Updates' then
 
    ```
    sudo update-initramfs -u
    ```
-4. Restart and run:
-
-   ```
-   lspci -k | grep -EA3 'VGA|3D|Display' 
-   ```
-
-   ... to check whether drivers have been installed; the output should include something like *Kernel driver in use: i915* for your Intel GPU, and *Kernel driver in use: nvidia* for Nvidia GPU.
 
 More details:
 
