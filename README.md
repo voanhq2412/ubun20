@@ -20,14 +20,6 @@ Partitioning:
 ---
 
 
-
-**Dual Boot Problem**
-
-https://www.howtogeek.com/114884/how-to-repair-grub2-when-ubuntu-wont-boot/
----
-
-
-
 **Initial Setup**
 
 1. ```
@@ -101,44 +93,34 @@ https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
 
 **Python Setup**
 
-1. install python:
+1. Install python & virtualenv:
    ```
    bash python3.8.sh
    ```
-2. install virtualenv:
-   ```
-   sudo apt install virtualenv
-   ```
-3. choose python version for virtualenv:
-   ```
-   virtualenv py38 --python=python3.8
-   ```
-4. create hiden folder for virtualenv:
-   ```
-   mkdir .virtualenv
-   ```
-5. start virtual env:
+2. start virtual env:
    ```
    source py38/bin/activate
    ```
-6. stop virtual env:
+3. stop virtual env:
    ```
    deactivate
    ```
-
-
+---
 ---
 
 
-
 **Ruby Setup**
+   ```
+   bash ruby.sh
+   ``` 
+---
+---
 
-https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04?fbclid=IwAR22EyXEhxtaSpGK6FVOKWYmkITkVFJheuJXqRKDX-kDAmUZXMzTfmCMQcs
 
 **Julia Setup**
-
-sudo snap install julia --classic
-
+   ```
+   sudo snap install julia --classic
+   ```
 ---
 
 
