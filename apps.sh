@@ -40,5 +40,7 @@ sudo ufw enable
 ## Gnome Shell: Disable freqeunt apps 
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 
-# wget https://github.com/vercel/hyper/releases/download/v3.1.5/hyper_3.1.5_amd64.deb
-# sudo apt -y install ./hyper_3.1.5_amd64.deb
+
+# Install Tabby Terminal 
+wget https://github.com/Eugeny/tabby/releases/download/v1.0.170/tabby-1.0.170-linux.deb
+sudo apt -y install ./tabby-1.0.170-linux.deb
