@@ -30,10 +30,8 @@ hotkeys:
     - - Shift-Right
   previous-word: []
   next-word: []
-  delete-previous-word:
-    - - Shift-Backspace
-  delete-next-word:
-    - - Shift-Delete
+  delete-previous-word: []
+  delete-next-word: []
   search:
     - - Ctrl-F
   pane-focus-all: []
@@ -50,7 +48,7 @@ hotkeys:
   profile-selectors: {}
   toggle-fullscreen: []
   close-tab:
-    - - Escape-T
+    - - Alt-T
   reopen-tab: []
   toggle-last-tab: []
   rename-tab: []
@@ -107,7 +105,7 @@ hotkeys:
   pane-nav-next: []
   pane-maximize: []
   close-pane:
-    - - Escape-P
+    - - Alt-P
   switch-profile: []
   profile-selector: []
 terminal:
