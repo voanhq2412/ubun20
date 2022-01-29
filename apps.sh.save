@@ -41,7 +41,7 @@ sudo ufw enable
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 
 
-# Install Tabby Terminal and copy config file
+# Install Tabby Terminal and c~/.config/tabbyopy config file
 wget https://github.com/Eugeny/tabby/releases/download/v1.0.170/tabby-1.0.170-linux.deb
 sudo apt -y install ./tabby-1.0.170-linux.deb
-cp config.yaml ~/.config/tabby/
+cp config.yaml ~/.config/tabby
