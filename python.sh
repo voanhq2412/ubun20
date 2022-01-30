@@ -17,6 +17,8 @@ pip3 install selenium
 pip3 install jupyterlab
 pip3 install plotly
 pip3 install black isort
+pip install -U scikit-learn
+pip install --upgrade tensorflow
 
 # install jupter extensions
 pip install jupyterlab_code_formatter
