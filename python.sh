@@ -22,4 +22,4 @@ pip3 install black isort
 pip install jupyterlab_code_formatter
 pip install jupyterlab-drawio
 pip install --upgrade jupyterlab jupyterlab-git
-
+jupyter labextension install @konodyuk/theme-ayu-mirage
