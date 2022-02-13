@@ -11,8 +11,7 @@ sudo apt-get update
 
 # Install the latest version of PostgreSQL.
 # If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
-sudo apt -y install postgresql-14
-
+sudo apt -y install postgresql-14 postgis postgresql-14-postgis-3
 #########################################################
 # postgis
 # https://gis.stackexchange.com/questions/318276/installing-postgis-after-postgresql-ubuntu-18-04
