@@ -8,6 +8,7 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 
 # Update the package lists:
 sudo apt-get update
+sudo add-apt-repository ppa:ubuntugis/ppa
 
 # Install the latest version of PostgreSQL.
 # If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
@@ -17,5 +18,3 @@ sudo apt -y install postgresql-14 postgis postgresql-14-postgis-3
 # https://gis.stackexchange.com/questions/318276/installing-postgis-after-postgresql-ubuntu-18-04
 # https://computingforgeeks.com/how-to-install-postgis-on-ubuntu-debian/
 
-sudo add-apt-repository ppa:ubuntugis/ppa
-sudo apt install postgis
