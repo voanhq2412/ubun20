@@ -18,11 +18,11 @@ pip3 install jupyterlab
 pip3 install plotly
 pip3 install matplotlib
 pip3 install black isort
-pip install -U scikit-learn
-pip install --upgrade tensorflow
+pip3 install -U scikit-learn
+pip3 install --upgrade tensorflow
 
 # install jupter extensions
-pip install jupyterlab_code_formatter
-pip install jupyterlab-drawio
-pip install --upgrade jupyterlab jupyterlab-git
+pip3 install jupyterlab_code_formatter
+pip3 install jupyterlab-drawio
+pip3 install --upgrade jupyterlab jupyterlab-git
 jupyter labextension install @konodyuk/theme-ayu-mirage
