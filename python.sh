@@ -14,6 +14,9 @@ pip3 install --upgrade pip
 pip3 install --upgrade distlib
 
 # install python packages
+pip3 install scikit-learn==0.20.4
+pip3 install tensorflow==2.7
+pip3 install opencv-python==4.1.2.30
 pip3 install pandas
 pip3 install selenium
 pip3 install jupyterlab
@@ -22,9 +25,6 @@ pip3 install matplotlib
 pip3 install black isort
 pip3 install numba
 pip3 install shapely
-pip3 install opencv-python
-pip3 install -U scikit-learn
-pip3 install --upgrade tensorflow
 
 # install jupter extensions
 pip3 install jupyterlab_code_formatter
