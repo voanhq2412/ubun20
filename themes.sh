@@ -17,4 +17,5 @@ sudo cp -a ./Wallpapers/. /usr/share/backgrounds
 
 # Disable Terminal Directory Highlighting
 echo "" >> ~/.bashrc
-echo "LS_COLORS=$LS_COLORS:'ow=1;34:' ; export LS_COLORS" >> ~/.bashrc
+echo 'export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"'>> ~/.bashrc
+source ~/.bashrc
