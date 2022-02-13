@@ -16,9 +16,9 @@ This Repo includes predefined settings and scripts for setting up Ubuntu 20.
 
 Partitioning:
 
-- Root (ext4, at least 15 GB)
+- Root (ext4, at least 25 GB)
 - Swap (swap, double size of RAM)
-- EFI (efi, 1 GB)
+- EFI (efi, 100 MB)
 - Home (ext, the remaining)
 
 ---
@@ -34,7 +34,6 @@ Partitioning:
    ```
    https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
    ```
-3.
 3. ```
    bash apps.sh
    bash themes.sh
