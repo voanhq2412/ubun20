@@ -43,7 +43,7 @@ sudo snap install code --classic
 
 
 # # Install apps
-sudo apt-get -y install gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell bleachbit
+sudo apt-get -y install gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell stacer
 
 ## enable firewall
 sudo ufw enable
@@ -55,4 +55,5 @@ gsettings set org.gnome.desktop.privacy remember-app-usage false
 # Install Tabby Terminal and copy config file
 wget https://github.com/Eugeny/tabby/releases/download/v1.0.170/tabby-1.0.170-linux.deb
 sudo apt -y install ./tabby-1.0.170-linux.deb
+tabby
 cp config.yaml ~/.config/tabby/
