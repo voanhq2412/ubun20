@@ -3,19 +3,15 @@ cd ~
 sudo apt -y install virtualenv
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.7
+sudo apt install python3.7-distutils -y
+sudo apt-get install python3-pip -y
 virtualenv py37 --python=python3.7
 source py37/bin/activate
 
 ########################################### Install all within virtualenv ############################################
-sudo apt install python3.7-distutils -y
-sudo apt-get install python3-pip -y
-pip3 install --upgrade setuptools
-pip3 install --upgrade pip
-pip3 install --upgrade distlib
-
 # install python packages
-pip3 install scikit-learn==0.20.4
 pip3 install numpy==1.19.5
+pip3 install scikit-learn==0.20.4
 pip3 install tensorflow==2.7
 pip3 install opencv-python==4.1.2.30
 pip3 install pandas
@@ -26,6 +22,8 @@ pip3 install matplotlib
 pip3 install black isort
 pip3 install numba
 pip3 install shapely
+pip3 install pickle
+pip3 install pipreqs
 
 # install jupter extensions
 pip3 install jupyterlab_code_formatter
