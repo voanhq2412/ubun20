@@ -43,7 +43,7 @@ sudo snap install code --classic
 
 
 # # Install apps
-sudo apt-get -y install gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell stacer
+sudo apt-get -y install gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell stacer ffmpegthumbnailer
 
 ## enable firewall
 sudo ufw enable
