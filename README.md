@@ -93,7 +93,7 @@ More details:
 
 [https://extensions.gnome.org/extension/591/remove-app-menu/](https://extensions.gnome.org/extension/591/remove-app-menu/)
 
-[https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
+https://extensions.gnome.org/extension/2878/transparent-top-panel/
 
 ---
 ---
