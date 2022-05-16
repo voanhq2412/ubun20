@@ -89,11 +89,11 @@ More details:
 
 **Gnome Extensions** (Need to set up Chrome and sync extensions first)
 
-[https://extensions.gnome.org/extension/307/dash-to-dock/](https://extensions.gnome.org/extension/307/dash-to-dock/)
+https://extensions.gnome.org/extension/4198/dash-to-plank/
 
 [https://extensions.gnome.org/extension/591/remove-app-menu/](https://extensions.gnome.org/extension/591/remove-app-menu/)
 
-https://extensions.gnome.org/extension/2878/transparent-top-panel/
+https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/
 
 ---
 ---
