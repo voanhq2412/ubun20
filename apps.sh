@@ -46,9 +46,7 @@ sudo snap install code --classic
 
 
 # # Install apps
-sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell stacer ffmpegthumbnailer dkms plank
-sudo apt remove gnome-shell-extension-ubuntu-dock
-
+sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell stacer ffmpegthumbnailer dkms
 ## enable firewall
 sudo ufw enable
 
