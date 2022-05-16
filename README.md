@@ -85,17 +85,6 @@ More details:
 [https://medium.com/bigdatarepublic/gpu-machine-learning-on-linux-fa972dd77cf2](https://medium.com/bigdatarepublic/gpu-machine-learning-on-linux-fa972dd77cf2)
 
 ---
-
-**Gnome Extensions** (Need to set up Chrome and sync extensions first)
-
-[https://extensions.gnome.org/extension/307/dash-to-dock/](https://extensions.gnome.org/extension/307/dash-to-dock/)
-
-[https://extensions.gnome.org/extension/591/remove-app-menu/](https://extensions.gnome.org/extension/591/remove-app-menu/)
-
-[https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/](https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/)
-
----
-
 ---
 
 **Python Setup**
