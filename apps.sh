@@ -32,10 +32,14 @@ sudo snap remove firefox
 # # Get latest system update
 sudo apt --fix-broken install && sudo apt -y update && sudo apt -y upgrade && sudo apt -y dist-upgrade
 
-# # Install wps
-# echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-# wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10976/wps-office_11.1.0.10976.XA_amd64.deb
-# sudo apt -y install ./wps-office_11.1.0.10976.XA_amd64.deb
+# Install wps ###
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10976/wps-office_11.1.0.10976.XA_amd64.deb
+sudo dpkg -i wps-office_11.1.0.10976.XA_amd64.deb
+wget https://mirror.umd.edu/ubuntu/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
+#####
+
 
 # # install snap apss
 sudo snap install vlc pinta docker
