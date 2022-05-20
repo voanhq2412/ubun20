@@ -44,7 +44,7 @@ sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
 # Obinskit for anne pro2
 wget https://s3.hexcore.xyz/occ/linux/deb/ObinsKit_1.2.11_x64.deb
 sudo dpkg -i ObinsKit_1.2.11_x64.deb
-
+sudo chmod 0666 /dev/hidraw*
 
 # # install snap apss
 sudo snap install vlc pinta docker
