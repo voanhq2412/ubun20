@@ -196,7 +196,7 @@ git push
 Delete branch locally
 
 ```
-git branch -d localBranchName
+git branch -D localBranchName
 ```
 
 Delete branch remotely
