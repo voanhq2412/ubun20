@@ -232,3 +232,28 @@ git pull
 git checkout my_working_branch
 git rebase master
 ```
+
+
+
+**Other commands**
+
+1. Connect to AWS EC2:
+
+   ```
+   ssh -i "private_key.pem" ec2-user@"EC2 public ip"
+   ```
+
+2. Copy local file to server:
+
+   ```
+   scp -i "private_key.pem" -r 'local_file' ec2-user@"EC2 public ip":"path_to_copy_to"
+   ```
+
+3. Change permission of file:
+
+   ```
+   sudo chmod -r 777 "file/dir"
+   ```
+
+---
+
