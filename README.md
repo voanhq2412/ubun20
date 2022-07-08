@@ -252,7 +252,7 @@ git rebase master
 3. Change permission of file:
 
    ```
-   sudo chmod -r 777 "file/dir"
+   sudo chmod -R 777 "file/dir"
    ```
 
 ---
