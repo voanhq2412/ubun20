@@ -257,3 +257,35 @@ git rebase master
 
 ---
 
+
+**Run Jupyter from remote server with GUI on local**
+https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/
+
+1. On remoteuser@remotehost, run headless jupyter through port XXXX
+
+   ```
+   jupyter notebook --no-browser --port=XXXX
+   ```
+
+2. On localuser@localhost, forward via ssh
+
+   ```
+   ssh -N -f -L localhost:YYYY:localhost:XXXX remoteuser@remotehost
+   ```
+
+3. On local browser, go to
+
+   ```
+   localhost:YYYY
+   ```
+   
+To check which process using which port
+   ```
+   lsof -i
+   ```
+To kill process
+   ```
+   kill 'PID'
+   ```
+   
+   
