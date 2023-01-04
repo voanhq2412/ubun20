@@ -224,6 +224,13 @@ etc. git fetch {git_repo} {their branch}:{new branch name}
 ```
 git fetch git@github.com:Propertypricetag/ppt_data.git cc/supplydemand_chart:quocanh/sdc
 ```
+or
+
+
+```
+git branch + Double tab
+```
+
 
 Update current branch based on master
 ```
