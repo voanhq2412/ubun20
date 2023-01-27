@@ -255,8 +255,11 @@ git rebase master
    ```
    scp -i "private_key.pem" -r 'local_file' ec2-user@"EC2 public ip":"path_to_copy_to"
    ```
-
-3. Change permission of file:
+3. Copy file from server to local:
+   ```
+   scp -i "private key id_ed..." -r ubuntu@umvnrobots:~/zork/current/log/agho.log ~/Documents
+   ```
+4. Change permission of file:
 
    ```
    sudo chmod -R 777 "file/dir"
