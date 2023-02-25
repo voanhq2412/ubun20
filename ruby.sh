@@ -15,13 +15,13 @@ source ~/.bashrc
 reset
 source ~/.bashrc
 
-# # # # RUBY
-rbenv install 3.0.2
-rbenv global 3.0.2
-ruby -v
+# # # # # RUBY
+# rbenv install 3.0.2
+# rbenv global 3.0.2
+# ruby -v
 
-echo "gem: --no-document" > ~/.gemrc
-gem install bundler
-gem install rails
-rbenv rehash
-rails -v
+# echo "gem: --no-document" > ~/.gemrc
+# gem install bundler
+# gem install rails
+# rbenv rehash
+# rails -v

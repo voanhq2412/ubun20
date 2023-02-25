@@ -18,6 +18,9 @@
 # # dpkg -l 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ ]*\).*/\1/;/[0-9]/!d' | xargs sudo apt-get -y purge
 
 
+### Copy nano settings 
+sudo cp nanorc /etc
+
 
 # # Install Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
