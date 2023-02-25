@@ -315,8 +315,6 @@ bind M-M mark main
 bind M-C comment main
 bind M-W pageup all
 bind M-S pagedown all
-bind M-A home main
-bind M-D end main
 bind M-] indent main
 bind M-[ unindent main
 #unbind ^K main
