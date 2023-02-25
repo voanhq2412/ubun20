@@ -196,7 +196,7 @@ git push
 Delete branch locally
 
 ```
-git branch -d localBranchName
+git branch -D localBranchName
 ```
 
 Delete branch remotely
@@ -224,6 +224,13 @@ etc. git fetch {git_repo} {their branch}:{new branch name}
 ```
 git fetch git@github.com:Propertypricetag/ppt_data.git cc/supplydemand_chart:quocanh/sdc
 ```
+or
+
+
+```
+git branch + Double tab
+```
+
 
 Update current branch based on master
 ```
@@ -232,3 +239,63 @@ git pull
 git checkout my_working_branch
 git rebase master
 ```
+
+
+
+**Other commands**
+
+1. Connect to AWS EC2:
+
+   ```
+   ssh -i "private_key.pem" ec2-user@"EC2 public ip"
+   ```
+
+2. Copy local file to server:
+
+   ```
+   scp -i "private_key.pem" -r 'local_file' ec2-user@"EC2 public ip":"path_to_copy_to"
+   ```
+3. Copy file from server to local:
+   ```
+   scp -i "private key id_ed..." -r ubuntu@umvnrobots:~/zork/current/log/agho.log ~/Documents
+   ```
+4. Change permission of file:
+
+   ```
+   sudo chmod -R 777 "file/dir"
+   ```
+
+---
+
+
+**Run Jupyter from remote server with GUI on local**
+https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/
+
+1. On remoteuser@remotehost, run headless jupyter through port XXXX
+
+   ```
+   jupyter notebook --no-browser --port=XXXX
+   ```
+
+2. On localuser@localhost, forward via ssh
+
+   ```
+   ssh -N -f -L localhost:YYYY:localhost:XXXX remoteuser@remotehost
+   ```
+
+3. On local browser, go to
+
+   ```
+   localhost:YYYY
+   ```
+   
+To check which process using which port
+   ```
+   lsof -i
+   ```
+To kill process
+   ```
+   kill 'PID'
+   ```
+   
+   
