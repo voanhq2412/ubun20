@@ -36,11 +36,11 @@ sudo snap remove firefox
 sudo apt --fix-broken install && sudo apt -y update && sudo apt -y upgrade && sudo apt -y dist-upgrade
 
 # Install wps ###
-echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10976/wps-office_11.1.0.10976.XA_amd64.deb
-sudo dpkg -i wps-office_11.1.0.10976.XA_amd64.deb
-wget https://mirror.umd.edu/ubuntu/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
-sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
+# echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+# wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10976/wps-office_11.1.0.10976.XA_amd64.deb
+# sudo dpkg -i wps-office_11.1.0.10976.XA_amd64.deb
+# wget https://mirror.umd.edu/ubuntu/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
+# sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
 #####
 
 
@@ -50,7 +50,7 @@ sudo dpkg -i ObinsKit_1.2.11_x64.deb
 sudo chmod 0666 /dev/hidraw*
 
 # # install snap apss
-sudo snap install vlc pinta docker
+sudo snap install pinta #pinta #docker
 
 # # install nodejs, vscode
 sudo snap install node --classic
@@ -58,7 +58,7 @@ sudo snap install code --classic
 
 
 # # Install apps
-sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell stacer ffmpegthumbnailer dkms
+sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell ffmpegthumbnailer dkms bleachbit
 ## enable firewall
 sudo ufw enable
 
