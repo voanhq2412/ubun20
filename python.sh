@@ -31,3 +31,9 @@ source py37/bin/activate
 # pip3 install jupyterlab-drawio
 # pip3 install --upgrade jupyterlab jupyterlab-git
 # jupyter labextension install @konodyuk/theme-ayu-mirage
+# pip install jupyterlab-tabular-data-editor
+
+# pip3 install jupyter_contrib_nbextensions
+# pip3 install jupyter_nbextensions_configurator
+# jupyter contrib nbextension install --user
+# jupyter nbextensions_configurator enable --user
