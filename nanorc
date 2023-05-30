@@ -339,3 +339,4 @@ bind ^L linter execute
 #bind ^E execute main
 
 #### Ctrl HOME/END to go to BEGINNING/END of file 
+#### M-M means Alt-M
