@@ -337,3 +337,5 @@ bind ^L linter execute
 #bind ^D findprevious all
 #bind ^R replace main
 #bind ^E execute main
+
+#### Ctrl HOME/END to go to BEGINNING/END of file 
