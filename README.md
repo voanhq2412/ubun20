@@ -94,8 +94,6 @@ More details:
 
 ---
 
----
-
 **Python Setup**
 
 1. Install python & virtualenv:
@@ -274,6 +272,11 @@ To check which process using which port
 
 ```
    lsof -i
+```
+
+To check memory consumption
+```
+   top (then Shift + M)
 ```
 
 To kill process
