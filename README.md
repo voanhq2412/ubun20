@@ -34,6 +34,7 @@ Partitioning:
    ```
    https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
    ```
+
 3. ```
    bash apps.sh
    bash themes.sh
@@ -85,14 +86,14 @@ More details:
 [https://medium.com/bigdatarepublic/gpu-machine-learning-on-linux-fa972dd77cf2](https://medium.com/bigdatarepublic/gpu-machine-learning-on-linux-fa972dd77cf2)
 
 ---
---- 
 
 **Gnome Extensions** (Need to set up Chrome and sync extensions first)
-https://extensions.gnome.org/extension/3906/remove-app-menu/
-https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/
-https://extensions.gnome.org/extension/744/hide-activities-button/
+[https://extensions.gnome.org/extension/3906/remove-app-menu/](https://extensions.gnome.org/extension/3906/remove-app-menu/)
+[https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/](https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/)
+[https://extensions.gnome.org/extension/744/hide-activities-button/](https://extensions.gnome.org/extension/744/hide-activities-button/)
 
 ---
+
 ---
 
 **Python Setup**
@@ -117,15 +118,11 @@ https://extensions.gnome.org/extension/744/hide-activities-button/
 
 ---
 
----
-
 **Ruby Setup**
 
 ```
    bash ruby.sh
 ```
-
----
 
 ---
 
@@ -135,6 +132,8 @@ https://extensions.gnome.org/extension/744/hide-activities-button/
    sudo snap install julia --classic
 ```
 
+---
+---
 ---
 
 **Common Git commands**
@@ -224,15 +223,15 @@ etc. git fetch {git_repo} {their branch}:{new branch name}
 ```
 git fetch git@github.com:Propertypricetag/ppt_data.git cc/supplydemand_chart:quocanh/sdc
 ```
-or
 
+or
 
 ```
 git branch + Double tab
 ```
 
-
 Update current branch based on master
+
 ```
 git checkout master
 git pull
@@ -240,9 +239,7 @@ git checkout my_working_branch
 git rebase master
 ```
 
-
-
-**Other commands**
+**Connect to server and file transfer**
 
 1. Connect to AWS EC2:
 
@@ -255,10 +252,13 @@ git rebase master
    ```
    scp -i "private_key.pem" -r 'local_file' ec2-user@"EC2 public ip":"path_to_copy_to"
    ```
+
 3. Copy file from server to local:
+
    ```
    scp -i "private key id_ed..." -r ubuntu@umvnrobots:~/zork/current/log/agho.log ~/Documents
    ```
+
 4. Change permission of file:
 
    ```
@@ -266,10 +266,31 @@ git rebase master
    ```
 
 ---
+---
 
+**Process management**
+
+To check which process using which port
+
+```
+   lsof -i
+```
+
+To kill process
+
+```
+   kill 'PID'
+```
+
+To force kill by keyword
+
+```
+   pkill -9 -f chrome
+```
+---
 
 **Run Jupyter from remote server with GUI on local**
-https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/
+[https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/](https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/)
 
 1. On remoteuser@remotehost, run headless jupyter through port XXXX
 
@@ -288,14 +309,3 @@ https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/
    ```
    localhost:YYYY
    ```
-   
-To check which process using which port
-   ```
-   lsof -i
-   ```
-To kill process
-   ```
-   kill 'PID'
-   ```
-   
-   
