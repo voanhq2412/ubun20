@@ -262,6 +262,11 @@ git rebase master
    ```
    sudo chmod -R 777 "file/dir"
    ```
+5. Create screen to run code uninterrupted
+   ```
+   screen -S 'instance_name'
+   screen -x 'instance_name'
+   ```
 
 ---
 ---
