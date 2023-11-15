@@ -295,7 +295,6 @@ To force kill by keyword
 ```
    pkill -9 -f chrome
 ```
----
 
 To copy text from nano, run the following then copy from the terminal rather than copy straight from within nano.
 
