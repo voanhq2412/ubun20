@@ -297,6 +297,14 @@ To force kill by keyword
 ```
 ---
 
+To copy text from nano, run the following then copy from the terminal rather than copy straight from within nano.
+
+```
+   cat file.txt
+```
+---
+
+
 **Run Jupyter from remote server with GUI on local**
 [https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/](https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/)
 
