@@ -10,9 +10,9 @@ source py37/bin/activate
 
 ########################################### Install all within virtualenv ############################################
 # # install python packages
-# pip3 install numpy==1.19.5
+# pip3 install numpy
 # pip3 install scikit-learn
-# # pip3 install tensorflow
+# pip3 install tensorflow
 # pip3 install opencv-python
 # pip3 install pandas
 # pip3 install selenium
@@ -29,9 +29,7 @@ source py37/bin/activate
 # # install jupter extensions
 # pip3 install jupyterlab_code_formatter
 # pip3 install jupyterlab-drawio
-# pip3 install --upgrade jupyterlab jupyterlab-git
 # jupyter labextension install @konodyuk/theme-ayu-mirage
-# pip install jupyterlab-tabular-data-editor
 
 # pip3 install jupyter_contrib_nbextensions
 # pip3 install jupyter_nbextensions_configurator
