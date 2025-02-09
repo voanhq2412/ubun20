@@ -23,8 +23,8 @@ sudo cp nanorc /etc
 
 
 # # Install Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt -y install ./google-chrome-stable_current_amd64.deb
+#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#sudo apt -y install ./google-chrome-stable_current_amd64.deb
 
 # # Uninstall unnecessary programs
 sudo apt-get purge -y --auto-remove gnome-power-manager gnome-calculator gnome-calendar gnome-screenshot gnome-font-viewer gnome-characters evince orca seahorse firefox emacs-gtk emacs-lucid speech-dispatcher spice-vdagent vim-common gnome-startup-applications apport apport-gtk 
@@ -36,29 +36,29 @@ sudo snap remove firefox
 sudo apt --fix-broken install && sudo apt -y update && sudo apt -y upgrade && sudo apt -y dist-upgrade
 
 # Install wps ###
-# echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-# wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10976/wps-office_11.1.0.10976.XA_amd64.deb
-# sudo dpkg -i wps-office_11.1.0.10976.XA_amd64.deb
-# wget https://mirror.umd.edu/ubuntu/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
-# sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10976/wps-office_11.1.0.10976.XA_amd64.deb
+sudo dpkg -i wps-office_11.1.0.10976.XA_amd64.deb
+wget https://mirror.umd.edu/ubuntu/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
 #####
 
 
 # Obinskit for anne pro2
-wget https://s3.hexcore.xyz/occ/linux/deb/ObinsKit_1.2.11_x64.deb
-sudo dpkg -i ObinsKit_1.2.11_x64.deb
-sudo chmod 0666 /dev/hidraw*
+#wget https://s3.hexcore.xyz/occ/linux/deb/ObinsKit_1.2.11_x64.deb
+#sudo dpkg -i ObinsKit_1.2.11_x64.deb
+#sudo chmod 0666 /dev/hidraw*
 
 # # install snap apss
-sudo snap install pinta #pinta #docker
+sudo snap install pinta typst #docker
 
 # # install nodejs, vscode
-sudo snap install node --classic
-sudo snap install code --classic
+#sudo snap install node --classic
+#sudo snap install code --classic
 
 
 # # Install apps
-sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell ffmpegthumbnailer dkms bleachbit
+#sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell ffmpegthumbnailer dkms 
 ## enable firewall
 sudo ufw enable
 
