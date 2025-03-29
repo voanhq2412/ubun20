@@ -23,8 +23,8 @@ sudo cp nanorc /etc
 
 
 # # Install Chrome
-#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#sudo apt -y install ./google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dkkg -i google-chrome-stable_current_amd64.deb
 
 # # Uninstall unnecessary programs
 sudo apt-get purge -y --auto-remove gnome-power-manager gnome-calculator gnome-calendar gnome-screenshot gnome-font-viewer gnome-characters evince orca seahorse firefox emacs-gtk emacs-lucid speech-dispatcher spice-vdagent vim-common gnome-startup-applications apport apport-gtk 
@@ -53,12 +53,11 @@ sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
 sudo snap install pinta typst #docker
 
 # # install nodejs, vscode
-#sudo snap install node --classic
-#sudo snap install code --classic
-
+sudo snap install node --classic
+sudo snap install code --classic
 
 # # Install apps
-#sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell ffmpegthumbnailer dkms 
+sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell ffmpegthumbnailer dkms 
 ## enable firewall
 sudo ufw enable
 
@@ -67,7 +66,7 @@ gsettings set org.gnome.desktop.privacy remember-app-usage false
 
 
 # Install Tabby Terminal and copy config file
-wget https://github.com/Eugeny/tabby/releases/download/v1.0.170/tabby-1.0.170-linux.deb
-sudo apt -y install ./tabby-1.0.170-linux.deb
+wget https://github.com/Eugeny/tabby/releases/download/v1.0.223/tabby-1.0.223-linux-x64.deb
+sudo dpkg -i tabby-1.0.223-linux-x64.deb
 tabby
 cp config.yaml ~/.config/tabby/

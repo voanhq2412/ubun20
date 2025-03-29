@@ -1,4 +1,4 @@
-version: 3
+version: 7
 profiles:
   - type: local
     name: User default
@@ -108,6 +108,44 @@ hotkeys:
     - - Alt-P
   switch-profile: []
   profile-selector: []
+  delete-line:
+    - Ctrl-Shift-Backspace
+  focus-all-tabs:
+    - Ctrl-Alt-Shift-I
+  scroll-to-top:
+    - Ctrl-PageUp
+  scroll-page-up:
+    - Alt-PageUp
+  scroll-up:
+    - Ctrl-Shift-Up
+  scroll-down:
+    - Ctrl-Shift-Down
+  scroll-page-down:
+    - Alt-PageDown
+  settings-tab: {}
+  group-selectors: {}
+  restart-tab: []
+  reconnect-tab: []
+  disconnect-tab: []
+  explode-tab:
+    - Ctrl-Shift-.
+  combine-tabs:
+    - Ctrl-Shift-,
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  command-selector:
+    - Ctrl-Shift-P
 terminal:
   searchOptions: {}
   colorScheme:
@@ -132,7 +170,6 @@ terminal:
       - '#bbe3ee'
       - '#87acb4'
       - '#fee4ce'
-  fontSize: 12
   font: Roboto Regular
   customColorSchemes:
     - name: ayu
@@ -181,14 +218,36 @@ terminal:
   bell: audible
   background: colorScheme
   cursorBlink: false
+  lightColorScheme:
+    name: ayu_light
+    foreground: '#5c6773'
+    background: '#fafafa'
+    cursor: '#ff6a00'
+    colors:
+      - '#000000'
+      - '#ff3333'
+      - '#86b300'
+      - '#f29718'
+      - '#41a6d9'
+      - '#f07178'
+      - '#4dbf99'
+      - '#ffffff'
+      - '#323232'
+      - '#ff6565'
+      - '#b8e532'
+      - '#ffc94a'
+      - '#73d8ff'
+      - '#ffa3aa'
+      - '#7ff1cb'
+      - '#ffffff'
+  fontSize: 16
 ssh: {}
 configSync:
   parts: {}
 clickableLinks:
   modifier: ctrlKey
 appearance:
-  vibrancy: true
-  frame: native
+  frame: full
   tabsLocation: right
 hacks: {}
 enableWelcomeTab: false
@@ -200,3 +259,8 @@ electronFlags:
     - '0'
 enableAnalytics: false
 recoverTabs: false
+groups: []
+accessibility: {}
+providerBlacklist: []
+commandBlacklist: []
+profileBlacklist: []
