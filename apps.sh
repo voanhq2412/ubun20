@@ -43,7 +43,6 @@ wget https://mirror.umd.edu/ubuntu/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1
 sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.13_amd64.deb
 #####
 
-
 # Obinskit for anne pro2
 #wget https://s3.hexcore.xyz/occ/linux/deb/ObinsKit_1.2.11_x64.deb
 #sudo dpkg -i ObinsKit_1.2.11_x64.deb
@@ -70,3 +69,4 @@ wget https://github.com/Eugeny/tabby/releases/download/v1.0.223/tabby-1.0.223-li
 sudo dpkg -i tabby-1.0.223-linux-x64.deb
 tabby
 cp config.yaml ~/.config/tabby/
+
