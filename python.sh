@@ -1,37 +1,34 @@
-# cd ~
-# install and activate virtualenv
-sudo apt -y install virtualenv
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.7
-sudo apt install python3.7-distutils -y
-sudo apt-get install python3-pip -y
-virtualenv py37 --python=python3.7
-source py37/bin/activate
+cd ~
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv self update
+uv python install 3.7 3.12
+uv venv ~/.virtualenvs/py37 --python 3.7
+uv venv ~/.virtualenvs/py312 --python 3.12
 
-########################################### Install all within virtualenv ############################################
-# # install python packages
-# pip3 install numpy
-# pip3 install scikit-learn
-# pip3 install tensorflow
-# pip3 install opencv-python
-# pip3 install pandas
-# pip3 install selenium
-# pip3 install jupyterlab
-# pip3 install plotly
-# pip3 install matplotlib
-# pip3 install black isort
-# pip3 install numba
-# pip3 install shapely
-# pip3 install pickle
-# pip3 install pipreqs
-# pip3 install tesseract
+source ~/.virtualenvs/py37/bin/activate
+uv pip install numpy
+uv pip install scikit-learn
+uv pip install tensorflow
+uv pip install opencv-python
+uv pip install pandas
+uv pip install selenium
+uv pip install jupyterlab
+uv pip install plotly
+uv pip install matplotlib
+uv pip install black isort
+uv pip install numba
+uv pip install shapely
 
-# # install jupter extensions
-# pip3 install jupyterlab_code_formatter
-# pip3 install jupyterlab-drawio
-# jupyter labextension install @konodyuk/theme-ayu-mirage
-
-# pip3 install jupyter_contrib_nbextensions
-# pip3 install jupyter_nbextensions_configurator
-# jupyter contrib nbextension install --user
-# jupyter nbextensions_configurator enable --user
+source ~/.virtualenvs/py312/bin/activate
+uv pip install numpy
+uv pip install scikit-learn
+uv pip install tensorflow
+uv pip install opencv-python
+uv pip install pandas
+uv pip install selenium
+uv pip install jupyterlab
+uv pip install plotly
+uv pip install matplotlib
+uv pip install black isort
+uv pip install numba
+uv pip install shapely
