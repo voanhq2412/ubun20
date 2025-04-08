@@ -56,7 +56,7 @@ sudo snap install node --classic
 sudo snap install code --classic
 
 # # Install apps
-sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell ffmpegthumbnailer dkms 
+sudo apt-get -y install gnome-tweaks gnome-shell-extensions chrome-gnome-shell ffmpegthumbnailer dkms vlc
 ## enable firewall
 sudo ufw enable
 
