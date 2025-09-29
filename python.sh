@@ -4,6 +4,7 @@ uv self update
 uv python install 3.7 3.12
 uv venv ~/.virtualenvs/py37 --python 3.7
 uv venv ~/.virtualenvs/py312 --python 3.12
+uv tool install ruff@latest
 
 SCRIPT_PATH="$(readlink -f "${BASH_SOURCE[0]}")"
 SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
